@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vigabella Store - Moda Feminina</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Conecte seu arquivo de estilos aqui -->
 </head>
+
 <body>
-    
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Vigabella Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <!-- Banner Inicial -->
+        <section id="home">
+            <h2>Bem-vindos à Vigabella Store</h2>
+            <p>Encontre peças exclusivas com o melhor custo-benefício e qualidade.</p>
+        </section>
+
+        <!-- Produtos -->
+        <section id="products">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="produto1.jpg" alt="Produto 1">
+                    <h3>Produto 1</h3>
+                    <p>Descrição breve do produto.</p>
+                    <p>Preço: R$ 99,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="produto2.jpg" alt="Produto 2">
+                    <h3>Produto 2</h3>
+                    <p>Descrição breve do produto.</p>
+                    <p>Preço: R$ 79,90</p>
+                    <button>Comprar</button>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section id="about">
+            <h2>Sobre a Vigabella Store</h2>
+            <p>A Vigabella Store é uma loja online de moda feminina, especializada em peças exclusivas e tendências de
+                moda com qualidade a preços acessíveis. Nossa missão é oferecer produtos que valorizem a mulher moderna.
+            </p>
+        </section>
+
+        <!-- Contato -->
+        <section id="contact">
+            <h2>Contato</h2>
+            <form action="enviar-contato.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Vigabella Store. Todos os direitos reservados.</p>
+        <p>Siga-nos nas redes sociais:</p>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
 </body>
+
 </html>
